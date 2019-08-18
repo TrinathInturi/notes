@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Notes</title>
+</head>
+
+<body class="margin-0">
+    <div class="header">
+        <h1 class="header-text">Notes</h1>
+        <div class="colors-panel">
+            <h4 class="margin-0">Please Select a Color</h4>
+            <br>
+            <select name="colors" id="colors-select">
+                    <option selected disabled>Select</option>
+                    <option value='1'>Red</option>
+                    <option value='2'>Yellow</option>
+                    <option value='3'>Orange</option>
+            </select>
+        </div>
+    </div>
+    <div class="container" id="card-container">
+        <div class="card" id="0">
+            <input type="hidden" value="0" id="note-id" />
+            <div class="card-header">
+                <div class="card-header-text" contenteditable="true">Tutorial</div>
+                <div class="card-tools">
+                    <ul class="tools-list">
+                        <li id="add-note">
+                            <i class="fa fa-plus"></i>
+                        </li>
+                        <li class="delete-note" id="delete-note-0">
+                            <i class="fa fa-trash"></i>
+                        </li>
+                        <li class="change-color" id="change-color-0">
+                            <i class="fa fa-paint-brush"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-body" contenteditable="true">
+                <p>Press the add icon to add new Note.
+                    <br>Press the delete icon to delete a Note.
+                    <br>Press the brush icon to change colors
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
